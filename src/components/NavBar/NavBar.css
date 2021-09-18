@@ -1,7 +1,7 @@
 .navbarStyle{
     position: fixed;
     width: 95%;
-    max-width: 1700px;
+    max-width: 1295px;
     top: 0;
     height: 4rem;
     border-bottom: 4px solid var(--BackgroundColorThird);

@@ -28,7 +28,7 @@ code {
   position: absolute;
   top: 4rem;
   width: 95%;
-  max-width: 1700px;
+  max-width: 1290px;
   min-height: 100vh;
   left: 50%;
   transform: translate(-50%);
@@ -79,6 +79,11 @@ code {
   cursor: pointer;
   background-color: transparent;
 }
+
+
+
+
+
 
 
 

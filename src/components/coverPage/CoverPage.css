@@ -1,0 +1,208 @@
+.containerCoverPage{
+    border-bottom: 4px solid var(--BackgroundColorThird);
+    padding: 2.5rem 0px 1rem 0px;
+}
+.displayGrid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:  "Tittle Tittle BtnAdd"
+                          "ImgPrimary ImgPrimary ImgPrimary"
+                          "Desc Desc AlsoBuy";
+    width: 100%;
+    height: 100%;
+  }
+  .coverTittle{
+    grid-area: Tittle;
+    /* background-color: turquoise; */
+  
+    margin-left: 5px;
+    height: 3rem;
+  
+    display:flex;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+  
+  }
+  .coverPrice{
+      color: var(--textColorSecondary);
+      font-weight: lighter;
+      margin-left: 1rem;
+  }
+  .coverBtnAdd{
+    grid-area: BtnAdd;
+    /* background-color: rgb(224, 64, 216); */
+  
+    margin-left: 5px;
+    height: 3rem;
+  
+    display:flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .coverImgPrimary{
+    grid-area: ImgPrimary;
+    margin-top: 1rem;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+  .coverImgPrimary img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+  .coverDesc{
+    grid-area: Desc;
+    /* background-color: yellowgreen; */
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .coverDescTittle{
+      font-size: 1.2rem;
+      color: var(--textColorPrimary);
+      font-weight: bolder;
+  }
+  .coverDescCategory{
+    font-size: 1.2rem;
+    color: var(--textColorSecondary);
+    font-weight: bolder;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+  }
+  .coverDescDescription{
+    font-size: 1.2rem;
+    color: var(--textColorSecondary);
+    font-weight: normal;
+    margin-top: .2rem;
+    margin-bottom: .2rem;
+    width: 85%;
+    text-align: left;
+  }
+
+  
+  .coverAlsoBuy{
+      /* background-color: turquoise; */
+    grid-area: AlsoBuy;
+    margin-top: 1rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+  .coverAlsoBuyContainter{
+      height: auto;
+      display: flex;
+      flex-direction: column;
+  }
+  .coverAlsoBuyContainterTittle{
+      height: 1.7rem;
+      color: var(--textColorPrimary);
+      font-weight: bold;
+
+      display: flex;
+      justify-content: right;
+      align-items: center;   
+    }
+    .coverAlsoBuyContainterImages{
+        display: flex;
+        justify-content: right;
+        color: var(--textColorSecondary);
+  }
+  .coverAlsoBuyIMGS{
+        width: 117px;
+        height: 147px;
+        margin-left: 1rem;
+  }
+  .coverAlsoBuyIMGS img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+  }
+
+
+  .btnAddStyles{
+    min-width: 50%;
+    height: 100%;
+    background-color: var(--BackgroundColorSecondary);
+    border: none;
+    color: var(--BackgroundColorPrimary);
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .3s ease-in-out;
+ }
+ .btnAddStyles:hover{
+    background-color: var(--BackgroundColorPrimary);
+    color: var(--BackgroundColorSecondary);
+    border: 4px solid var(--BackgroundColorSecondary);
+ }
+.coverBadge{
+    position:absolute;
+    bottom: 0;
+    width: 227px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: var(--BackgroundColorPrimary);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+
+
+ @media (max-width:414px){
+
+    .displayGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto auto auto;
+        grid-template-areas:  "Tittle"
+                              "ImgPrimary"
+                              "BtnAdd"
+                              "Desc"
+                              "AlsoBuy";
+        
+      }
+
+    .containerCoverPage{
+        padding: 2rem 0px 1rem 0px;
+    }
+    .coverBadge{
+        width: 50%;
+        padding: .5rem 1.5rem .5rem 1.5rem;
+    }
+
+    .coverBtnAdd{
+        margin-top: 1rem;
+        margin-left: 0px;
+    }
+    .btnAddStyles{
+        width: 100%;  
+     }
+    .coverDescDescription{
+      width: 100%;
+    }
+
+
+    .coverAlsoBuyContainterTittle{
+        justify-content: left;
+      }
+      .coverAlsoBuyContainterImages{
+          justify-content: left;
+          overflow: hidden;
+    }
+
+    .coverAlsoBuyIMGS{
+        width: 33%;
+        height: 120px;
+        margin-left: 0rem;
+        margin-right: 5px;
+  }
+
+ }
