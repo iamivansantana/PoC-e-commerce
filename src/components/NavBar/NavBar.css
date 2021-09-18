@@ -1,0 +1,53 @@
+.navbarStyle{
+    position: fixed;
+    width: 95%;
+    max-width: 1700px;
+    top: 0;
+    height: 4rem;
+    border-bottom: 4px solid var(--BackgroundColorThird);
+    background-color: var(--BackgroundColorPrimary);;
+    
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 100;
+}
+.bejamsStyles{
+width: 10rem;
+}
+.shopingCartIconStyles{
+    width: 2.5rem;
+    height: 2.5rem;
+    margin-right: 15px;
+    transition: .2s ease-in-out;
+}
+.mark-cart{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: -20px;
+
+    width: 20px;
+    height: 20px;
+    color: var(--BackgroundColorPrimary);
+    background-color: var(--BackgroundColorSecondary);
+    
+    font-size: .8rem;
+    font-weight: bolder;
+    text-align: center;
+    line-height: 20px;
+}
+
+
+
+
+@media (max-width:414px){
+    .bejamsStyles{
+        width: 6rem;
+    }
+    .shopingCartIconStyles{
+        width: 2rem;
+        height: 2rem;
+    }
+    .mark-cart{
+        margin-top: 25px;
+    }
+}
