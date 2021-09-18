@@ -29,6 +29,24 @@ const ShopingList = () => {
                                 <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
                             </div>
                         </div>
+                        <div className="flex shopingItemStyles flex-justify-between">
+                            <div className="shopingItemDescription flex flex-column flex-justify-center" >
+                                <div className="shopingItemDescriptionTittle">Samurai King Resting</div>
+                                <div className="shopingItemDescriptionPrice">$10000.00</div>
+                            </div>
+                            <div className="flex shopingItemImage">
+                                <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
+                            </div>
+                        </div>
+                        <div className="flex shopingItemStyles flex-justify-between">
+                            <div className="shopingItemDescription flex flex-column flex-justify-center" >
+                                <div className="shopingItemDescriptionTittle">Samurai King Resting</div>
+                                <div className="shopingItemDescriptionPrice">$10000.00</div>
+                            </div>
+                            <div className="flex shopingItemImage">
+                                <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
+                            </div>
+                        </div>
                         
                         
                     </div>

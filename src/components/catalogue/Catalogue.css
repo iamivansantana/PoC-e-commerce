@@ -1,0 +1,16 @@
+.catalogueContainer{
+    position: relative;
+    width: 100%;
+    height: auto;
+    min-height: 80vh;
+}
+.catalogueHead{
+    background-color: yellow;
+    padding: 2rem;
+}
+.catalogueFiltering{
+    background-color: violet;
+    width: 20%;
+    height: auto;
+    min-height: 50vh;
+}

@@ -1,6 +1,6 @@
 .containerCoverPage{
     border-bottom: 4px solid var(--BackgroundColorThird);
-    padding: 2.5rem 0px 1rem 0px;
+    padding: 2.5rem 0px 2rem 0px;
 }
 .displayGrid{
     display: grid;
