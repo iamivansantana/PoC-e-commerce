@@ -1,0 +1,52 @@
+.containerProduct{
+    min-width: 282px;
+    width: 282px;
+    height: 454px;
+    height: 514px;
+    /* background-color: magenta; */
+    cursor: pointer;
+}
+
+.productImgContainer{
+    width: 100%;
+    height: 75%;
+    position: relative;
+}
+.productDescContainer{
+    width: 100%;
+    height: 25%;
+    /* background-color: magenta; */
+    overflow: hidden;
+}
+.productImgContainer:hover > .productHover{
+    opacity: 1;
+    visibility: visible;
+}
+.productHover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    /* background-color: #0a263873; */
+    transition: all 250ms ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    color: #fff;
+    z-index: 200;
+}
+.btnAdd{
+    width: 100%;
+    height: 46px;
+    background-color: var(--BackgroundColorSecondary);
+    border: none;
+    color: var(--BackgroundColorPrimary);
+    font-size: 1rem;
+    font-weight: bold;
+    letter-spacing: 2px;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+ }
+ .btnAdd:hover{
+    background-color: var(--BackgroundColorPrimary);
+    color: var(--BackgroundColorSecondary);
+    border: 4px solid var(--BackgroundColorSecondary);
+ }

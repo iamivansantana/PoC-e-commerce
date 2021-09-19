@@ -3,24 +3,9 @@
     max-width: 208px;
     width: auto;
 }
-.categoriesStyles{
-    /* background-color: rgb(151, 197, 197); */
-    /* margin-bottom: 15px; */
-    padding-bottom: 1.5rem;
-    /* border-bottom: 1px solid var(--BackgroundColorLineDown); */
-}
-.borderDown{
-    width: 100%;
-    border-bottom: 1px solid var(--BackgroundColorLineDown);
-
-}
 .checkbox{
-    /* background-color: aqua; */
-    /* border: 1px solid #000; */
     padding-top: 1rem;
     min-width: 200px;
-    /* width: 200px; */
-    /* padding-bottom: ; */
     cursor: pointer;
 }
 

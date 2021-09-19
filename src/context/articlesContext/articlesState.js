@@ -11,6 +11,10 @@ const ArticlesState = ( props ) => {
     const [checkValues, setCheckValues] = useState([]);
    //State to change toggle of Shopping Cart
     const [shopingState, setShopingState] = useState(false);
+    //State to change toggle of sortingButton
+    const [sortingStatus, setSortingStatus] = useState(true);
+    // State of InitialPrice
+    const [priceState, setPriceState] = useState('Any Price');
 
 //Functions
     //toggleOfShoppingCart
@@ -27,7 +31,11 @@ const ArticlesState = ( props ) => {
             shopingState,
             setCheckValues,
             setShopingState,
-            toggleCart
+            toggleCart,
+            setPriceState,
+            priceState,
+            setSortingStatus,
+            sortingStatus,
 
          }}
         >

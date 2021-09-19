@@ -1,13 +1,14 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import articlesContext from '../../context/articlesContext/articlesContext';
 import './Filtering.css';
 
 const Filtering = () => {
 
-    const [priceState, setPriceState] = useState('Any Price');
+    
 
     //Access to context
-    const {arrayOfCategories,checkValues,setCheckValues} = useContext(articlesContext);
+        //Destructuring states and functions
+    const {arrayOfCategories,checkValues,setCheckValues,setPriceState} = useContext(articlesContext);
 
     //Function to update the state 
     const actualizarState = (e)=>{
@@ -24,9 +25,9 @@ const Filtering = () => {
 
     return (
         <>
-            <div className="containerFiltering borderDown">
+            <div className="containerFiltering">
                 
-                <div className="flex flex-column categoriesStyles">
+                <div className="flex flex-column " style={{paddingBottom:'1.5rem', borderBottom:'1px solid var(--BackgroundColorLineDown)'}}>
                     <div className="textSubtittle textBold textColorPrimary">Category</div>
                     {
                         arrayOfCategories.map((category)=>(
@@ -44,7 +45,7 @@ const Filtering = () => {
                     }
                 </div>
 
-                <div className="flex flex-column categoriesStyles">
+                <div className="flex flex-column"  style={{paddingBottom:'1.5rem'}}>
                     <div className="textSubtittle textBold textColorPrimary" style={{marginTop:'1rem'}}>Price range</div>
                     <label className="textSubtittle checkbox flex">
                         <input type="radio" id="price1" name="price" defaultChecked value="Lower than $20" onClick={() => setPriceState('Any Price')}/>

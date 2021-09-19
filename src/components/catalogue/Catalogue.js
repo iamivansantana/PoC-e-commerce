@@ -1,10 +1,14 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import articlesContext from '../../context/articlesContext/articlesContext';
 import Filtering from '../filtering/Filtering';
+import Product from '../products/Product';
 import './Catalogue.css'
 
 const Catalogue = () => {
 
-    const [sortingStatus, setSortingStatus] = useState(true);
+    //Access to Context
+        //Destructuring of sortingStatus to show the sortingButton
+    const {sortingStatus} = useContext(articlesContext);
 
     return (
         <>
@@ -41,9 +45,37 @@ const Catalogue = () => {
                     <div className="catalogueFiltering">
                             <Filtering />
                     </div>  
-                    <div className="catalogueGalery">Galery</div>  
+
+                    <div className="catalogueGalery flex  flex-justify-center">
+                            <Product />
+                            <p>-------</p>
+                            <Product />
+                            <p>-------</p>
+                            <Product />
+                    </div>  
+
 
                 </div>
+                    {/* <div>
+                        {(0===1)?null
+                        :
+                        <button
+                            type="button"
+                            className="bbtn btn-info mr-2 mb-5"
+                            // onClick={}
+                            >&laquo; Anterior            
+                        </button>
+                        }
+                        {(5 === 6)?null
+                        :
+                        <button
+                            type="button"
+                            className="bbtn btn-info mb-5"
+                            // onClick={}
+                        >Siguiente &raquo;           
+                        </button>
+                        }
+                    </div> */}
             </div>
         </>
     )
