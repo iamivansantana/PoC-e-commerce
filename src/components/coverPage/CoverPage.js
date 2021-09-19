@@ -12,7 +12,8 @@ const CoverPage = () => {
                     </div>
                     <div className="coverImgPrimary">
                         <div className="coverBadge">Photo of the day</div>
-                        <img src="\assets\e-commerce\perritoGrande.png" alt="PhotoOfTheDay"/>
+                        {/* <img src={`https://images.pexels.com/photos/459654/pexels-photo-459654.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`} alt="PhotoOfTheDay"/> */}
+                        <img src={`https://scontent.fmex4-2.fna.fbcdn.net/v/t1.6435-9/123077653_1464265817297393_7014329827557387994_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=e3f864&_nc_ohc=1LoxyzVpzeIAX-ooxIM&_nc_ht=scontent.fmex4-2.fna&oh=08ce8afdc09dbc3328de8cdd592e822c&oe=616C5278`} alt="PhotoOfTheDay"/>
                     </div>
                     <div className="coverDesc">
                         <div className="coverDescTittle">About the Samurai King Resting</div>

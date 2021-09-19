@@ -12,7 +12,10 @@
     z-index: 100;
 }
 .bejamsStyles{
-width: 10rem;
+/* width: 10rem; */
+    width: 159px;
+    height: 25.22px;
+    transition: 1s ease-in-out;
 }
 .shopingCartIconStyles{
     width: 2.5rem;
@@ -41,7 +44,7 @@ width: 10rem;
 
 @media (max-width:414px){
     .bejamsStyles{
-        width: 6rem;
+        width: 8rem;
     }
     .shopingCartIconStyles{
         width: 2rem;

@@ -3,14 +3,29 @@
     width: 100%;
     height: auto;
     min-height: 80vh;
+    margin-top: 2rem;
 }
-.catalogueHead{
-    background-color: yellow;
-    padding: 2rem;
+.catalogueTittle{
+    /* background-color: skyblue; */
+    max-width: 60%;
 }
+
+
+
+
+
+
 .catalogueFiltering{
-    background-color: violet;
-    width: 20%;
+    /* background-color: violet; */
+    min-width: 200px;
+    width: 25%;
     height: auto;
     min-height: 50vh;
 }
+.catalogueGalery{
+    /* background-color: springgreen; */
+    width: 100%;
+    height: auto;
+    min-height: 50vh;
+}
+

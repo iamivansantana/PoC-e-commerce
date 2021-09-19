@@ -45,6 +45,7 @@
     grid-area: ImgPrimary;
     margin-top: 1rem;
     width: 100%;
+    max-height: 553px;
     overflow: hidden;
     position: relative;
   }
@@ -146,17 +147,19 @@
     width: 227px;
     padding: 1rem 1.5rem 1rem 1.5rem;
     background-color: var(--BackgroundColorPrimary);
+    font-weight: bold;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
 
 }
 
 
 
 
- @media (max-width:414px){
+ @media (max-width:750px){
 
     .displayGrid{
         display: grid;

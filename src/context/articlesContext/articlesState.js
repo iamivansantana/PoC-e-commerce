@@ -3,11 +3,16 @@ import articlesContext from './articlesContext';
 
 const ArticlesState = ( props ) => {
 
-    //States
+    // Initial Array of Categories 
+    const arrayOfCategories = ['People','Premium','Pets', 'Food', 'Landmarks','Cities', 'Nature'];
+    
+//States
+    //State of Categories' checks    
+    const [checkValues, setCheckValues] = useState([]);
+   //State to change toggle of Shopping Cart
     const [shopingState, setShopingState] = useState(false);
 
-    //Functions
-
+//Functions
     //toggleOfShoppingCart
     const toggleCart = () => {
         if(shopingState)setShopingState(false);
@@ -17,7 +22,10 @@ const ArticlesState = ( props ) => {
     return (
         <articlesContext.Provider
          value={{
+            arrayOfCategories,
+            checkValues,
             shopingState,
+            setCheckValues,
             setShopingState,
             toggleCart
 
