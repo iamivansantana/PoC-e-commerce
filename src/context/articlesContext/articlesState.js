@@ -4,7 +4,7 @@ import articlesContext from './articlesContext';
 const ArticlesState = ( props ) => {
 
     // Initial Array of Categories 
-    const arrayOfCategories = ['People','Premium','Pets', 'Food', 'Landmarks','Cities', 'Nature'];
+    const arrayOfCategories = ['People','Illustrations','Art', 'Sunset', 'Wallpapers','Abstract', 'Nature'];
     
 //States
     //State of Categories' checks    
