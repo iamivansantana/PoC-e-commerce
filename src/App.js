@@ -1,19 +1,20 @@
 import React from 'react';
 import Catalogue from './components/catalogue/Catalogue';
 import CoverPage from './components/coverPage/CoverPage';
+import FilteringFixed from './components/filtering/FilteringFixed';
 import NavBar from './components/NavBar/NavBar';
-import ArticlesState from './context/articlesContext/articlesState';
 
 const App = () => {
+
+
   return (
     <>
-        <ArticlesState>
+        <FilteringFixed />
           <NavBar />
           <div className="containerProject">
             <CoverPage />
             <Catalogue />
           </div>
-        </ArticlesState>
     </>
   )
 }

@@ -1,17 +1,18 @@
 import React from 'react';
 import './Product.css';
 
-const Product = () => {
+const ProductCard = () => {
     return (
         <>
             <div className="containerProduct flex flex-column">
                 <div className="productImgContainer">
                     <div className="productHover">
                         <div className="flex flex-aling-right">
-                            <button className="btnAdd" type="button">ADD TO CART</button>
+                            <button onClick={()=>{alert('ok')}} className="btnAdd" type="button">ADD TO CART</button>
                         </div>
                     </div>
-                    <img className="imgCover" src="\assets\e-commerce\perritoGrande.png" alt="alt"/>
+                    <img className="imgCover" src={`https://cdn.pixabay.com/photo/2021/09/11/15/43/outdoor-6615900_960_720.jpg`} alt="alt"/>
+                    <div className="bestSeller">Best Seller</div>
                 </div>
                 <div className="productDescContainer flex flex-column flex-justify-around">
                     <div className="textSubtittle textBold textColorSecondary" >Food</div>
@@ -24,4 +25,4 @@ const Product = () => {
     )
 }
 
-export default Product
+export default ProductCard

@@ -33,20 +33,42 @@
     color: #fff;
     z-index: 200;
 }
-.btnAdd{
-    width: 100%;
-    height: 46px;
-    background-color: var(--BackgroundColorSecondary);
-    border: none;
-    color: var(--BackgroundColorPrimary);
-    font-size: 1rem;
-    font-weight: bold;
-    letter-spacing: 2px;
-    transition: .3s ease-in-out;
-    cursor: pointer;
- }
- .btnAdd:hover{
+
+ 
+.bestSeller{
+    position:absolute;
+    top: 0;
+    width: 124px;
+    height: 29px;
+    font-size: 20px;
+    /* padding: 1rem 1.5rem 1rem 1.5rem; */
     background-color: var(--BackgroundColorPrimary);
-    color: var(--BackgroundColorSecondary);
-    border: 4px solid var(--BackgroundColorSecondary);
- }
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+/* ProductList */
+.containerList{
+    /* background-color: aqua; */
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: 100%;
+  }
+  .containerListGrid{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+    /* gap: 1rem 0rem 1rem 0rem; */
+    /* gap: 1rem; */
+    row-gap: 2rem;
+   }
+   .paginationStyles{
+       /* background-color: aqua; */
+       height: 4rem;
+   }

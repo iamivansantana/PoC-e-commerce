@@ -34,6 +34,7 @@ code {
   transform: translate(-50%);
   background-color: var(--BackgroundColorPrimary);
   
+  overflow: hidden;
 }
 .flex{
   display: flex;
@@ -120,7 +121,52 @@ select {
     object-fit: cover;
     object-position: 50% 50%;
 }
-
+.btnAdd{
+  width: 100%;
+  height: 46px;
+  background-color: var(--BackgroundColorSecondary);
+  border: none;
+  color: var(--BackgroundColorPrimary);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.btnAdd:hover{
+  background-color: var(--BackgroundColorPrimary);
+  color: var(--BackgroundColorSecondary);
+  border: 4px solid var(--BackgroundColorSecondary);
+}
+.btnAdd:active{
+   background-color: rgb(105, 105, 105);
+   color: var(--BackgroundColorPrimary);
+   border: 4px solid var(--BackgroundColorSecondary);
+   transition: .2s ease-in-out;
+}
+.btnClear{
+  width: 100%;
+  height: 46px;
+  background-color: var(--BackgroundColorPrimary);
+  border: 4px solid var(--BackgroundColorSecondary);
+  color: var(--BackgroundColorSecondary);
+  font-size: 1rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  transition: .3s ease-in-out;
+  cursor: pointer;
+}
+.btnClear:hover{
+  background-color: var(--BackgroundColorSecondary);
+  color: var(--BackgroundColorPrimary);
+  border: 4px solid var(--BackgroundColorSecondary);
+}
+.btnClear:active{
+   background-color: rgb(105, 105, 105);
+   color: var(--BackgroundColorPrimary);
+   border: 4px solid var(--BackgroundColorSecondary);
+   transition: .2s ease-in-out;
+}
 
 
 

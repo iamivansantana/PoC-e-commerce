@@ -1,14 +1,45 @@
-import React, { useContext } from 'react';
+import React, { useContext, useEffect } from 'react';
 import articlesContext from '../../context/articlesContext/articlesContext';
 import Filtering from '../filtering/Filtering';
-import Product from '../products/Product';
+import ProductList from '../products/ProductList';
 import './Catalogue.css'
 
 const Catalogue = () => {
 
+    
     //Access to Context
-        //Destructuring of sortingStatus to show the sortingButton
-    const {sortingStatus} = useContext(articlesContext);
+        //Destructuring States
+    const {screenSize,setScreenSize,toggleFilteringFunc} = useContext(articlesContext);
+
+
+    //Effecto que escucha cuando cambia el tamaño de la pantalla;
+    useEffect(() => {
+
+        function isSmallScreen() {
+            return window.matchMedia('(max-width: 876px)').matches;
+        }
+        setScreenSize(isSmallScreen());
+        
+
+        // Funcion que se ejecuta cada que el tamaño de la pantalla cambia
+        const screenResize = () => {
+
+            //Verifica cada vez que cambia el tamaño si se cumple el max-width para visualizar el componente de una manera responsive.
+            function isSmallScreen() {
+                return window.matchMedia('(max-width: 876px)').matches;
+            }
+            //Si la pantalla es menor a 500px (celular Vertical) 
+            if(isSmallScreen()) setScreenSize(true);
+            else setScreenSize(false);
+            
+        }
+
+        //Evento que escucha cuando cambia el tamaño de la pantalla
+        window.addEventListener("resize",()=>{screenResize()});
+
+    },[setScreenSize]);
+
+
 
     return (
         <>
@@ -21,9 +52,9 @@ const Catalogue = () => {
                     </div>  
                     <div className="flex flex-justify-right">
                        
-                        {(sortingStatus)?
+                        {(screenSize)?
                             <div>
-                               <button className="btn btn-hover" type="button"><img width="29px" height="29px" src="\assets\e-commerce\icons\sortingIcon.svg" alt="sortingButton"/></button>
+                               <button onClick={toggleFilteringFunc} className="btn btn-hover" type="button"><img width="29px" height="29px" src="\assets\e-commerce\icons\sortingIcon.svg" alt="sortingButton"/></button>
                             </div>
                         :null}
                     </div>
@@ -42,16 +73,26 @@ const Catalogue = () => {
                 
                 <div className="flex" style={{marginTop:'1rem'}}>
 
-                    <div className="catalogueFiltering">
-                            <Filtering />
-                    </div>  
+                            {
+                                (!screenSize)?
+                                    <div className="catalogueFiltering">
+                                            <Filtering />
+                                    </div>  
+                                :null
+                            }
+
+                            
+
 
                     <div className="catalogueGalery flex  flex-justify-center">
-                            <Product />
+                            
+                            <ProductList />
+
+                            {/* <ProductCard /> */}
+                            {/* <p>-------</p>
+                            <ProductCard />
                             <p>-------</p>
-                            <Product />
-                            <p>-------</p>
-                            <Product />
+                            <ProductCard /> */}
                     </div>  
 
 

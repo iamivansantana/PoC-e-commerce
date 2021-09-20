@@ -26,7 +26,7 @@ const ShopingList = () => {
                                 <div className="shopingItemDescriptionPrice">$10000.00</div>
                             </div>
                             <div className="flex shopingItemImage">
-                                <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
+                                <img src={`https://cdn.pixabay.com/photo/2021/09/11/15/43/outdoor-6615900_960_720.jpg`} alt="imgProduct" />
                             </div>
                         </div>
                         <div className="flex shopingItemStyles flex-justify-between">
@@ -35,7 +35,7 @@ const ShopingList = () => {
                                 <div className="shopingItemDescriptionPrice">$10000.00</div>
                             </div>
                             <div className="flex shopingItemImage">
-                                <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
+                                <img src={`https://cdn.pixabay.com/photo/2021/09/11/15/43/outdoor-6615900_960_720.jpg`} alt="imgProduct" />
                             </div>
                         </div>
                         <div className="flex shopingItemStyles flex-justify-between">
@@ -44,7 +44,7 @@ const ShopingList = () => {
                                 <div className="shopingItemDescriptionPrice">$10000.00</div>
                             </div>
                             <div className="flex shopingItemImage">
-                                <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
+                                <img src={`https://cdn.pixabay.com/photo/2021/09/11/15/43/outdoor-6615900_960_720.jpg`} alt="imgProduct" />
                             </div>
                         </div>
                         <div className="flex shopingItemStyles flex-justify-between">
@@ -53,7 +53,7 @@ const ShopingList = () => {
                                 <div className="shopingItemDescriptionPrice">$10000.00</div>
                             </div>
                             <div className="flex shopingItemImage">
-                                <img src="\assets\e-commerce\perrito.png" alt="imgProduct" />
+                                <img src={`https://cdn.pixabay.com/photo/2021/09/11/15/43/outdoor-6615900_960_720.jpg`} alt="imgProduct" />
                             </div>
                         </div>
                         

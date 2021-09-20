@@ -82,3 +82,78 @@ input[type="radio"]:checked{
 input[type="radio"]:checked::after{
     display: block;
 }
+
+
+
+
+.filteringWindow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 300;
+    /* display: none; */
+    visibility: hidden;
+}
+.filteringWindowACTIVE{
+    /* display: block; */
+    visibility: visible;
+    transition: .7s ease-in-out;
+
+}
+.filteringBack{
+    position: absolute;
+    background-color: rgb(0, 0, 0);
+    opacity: .5;
+    width: 100%;
+    height: 100%;
+    z-index: 300;  
+}
+
+
+.FilteringWindowContainer{
+    position: absolute;
+    bottom: -100%;
+    background-color: var(--BackgroundColorPrimary);
+    /* background-color: rgb(209, 39, 39); */
+    height: 90%;
+    z-index: 400;
+    overflow: hidden;
+    transition: .7s ease-in-out;
+}
+.FilteringWindowContainerACTIVE{
+    bottom: 0%;
+}
+.FilteringContainerSettings{
+    /* background-color: aqua; */
+    /* padding: 2rem; */
+    width: 100%;
+    height: 85%;
+    padding: 1.5rem;
+    position: absolute;
+}
+.filteringSettings{
+    /* border: 2px solid #000; */
+    height: 100%;
+    overflow: scroll;
+}
+.filteringSettings::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
+
+.filteringSettings::-webkit-scrollbar:vertical {
+    width:5px;
+}
+
+.filteringSettings::-webkit-scrollbar-thumb {
+    background-color: var(--BackgroundColorSecondary);
+    border-radius: 30px;
+}
+.filteringButtonsContainer{    
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 15%;
+    border-top: 4px solid var(--BackgroundColorThird);
+    /* bottom: 0; */
+    /* background-color: var(--BackgroundColorPrimary); */
+}

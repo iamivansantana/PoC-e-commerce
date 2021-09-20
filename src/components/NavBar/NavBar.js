@@ -21,6 +21,9 @@ const NavBar = () => {
                 </div>
                 
                 {(shopingState)?<ShopingList />:null}
+
+                
+                
                 
             </div>  
         </>

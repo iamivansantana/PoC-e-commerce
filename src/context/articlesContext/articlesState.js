@@ -12,9 +12,13 @@ const ArticlesState = ( props ) => {
    //State to change toggle of Shopping Cart
     const [shopingState, setShopingState] = useState(false);
     //State to change toggle of sortingButton
-    const [sortingStatus, setSortingStatus] = useState(true);
+   
     // State of InitialPrice
     const [priceState, setPriceState] = useState('Any Price');
+    //State for ScreenSizes Changes
+    const [screenSize, setScreenSize] = useState(true);
+    //State to change toggle of Filtering
+    const [filteringToggle, setFilteringToggle] = useState(false);
 
 //Functions
     //toggleOfShoppingCart
@@ -22,10 +26,17 @@ const ArticlesState = ( props ) => {
         if(shopingState)setShopingState(false);
         else setShopingState(true);
     }
+    //toggleOfShoppingCart
+    const toggleFilteringFunc = () => {
+
+        if(filteringToggle)setFilteringToggle(false);
+        else setFilteringToggle(true);
+    }
 
     return (
         <articlesContext.Provider
          value={{
+            toggleFilteringFunc,
             arrayOfCategories,
             checkValues,
             shopingState,
@@ -34,8 +45,9 @@ const ArticlesState = ( props ) => {
             toggleCart,
             setPriceState,
             priceState,
-            setSortingStatus,
-            sortingStatus,
+            screenSize,
+            setScreenSize,
+            filteringToggle,
 
          }}
         >
