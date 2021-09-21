@@ -12,7 +12,7 @@ const ProductCard = ({product}) => {
                             <button onClick={()=>{alert('ok')}} className="btnAdd" type="button">ADD TO CART</button>
                         </div>
                     </div>
-                    <img className="imgCover" src={`${product.image.src}`} alt="alt"/>
+                    <img loading="lazy" className="imgCover" src={`${product.image.src}`} alt="alt"/>
                     {
                         (product.bestseller)?<div className="bestSeller">Best Seller</div>
                         :null

@@ -5,7 +5,7 @@ export const products = [
         "price": 3.89,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g2cd487248bfc7bc931c632c7c972267d63852f4d3536bffe7c9fded62f9727c8f82889dac65a53c4a270fdf420320d6a0bfcdb004528cc8dce4c1ccb32b684b5_1280.jpg",
+            "src": "https://images.pexels.com/photos/1209843/pexels-photo-1209843.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "alt": "womanFace"
         },
         "bestseller": true,
@@ -20,7 +20,7 @@ export const products = [
         "price": 14.79,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g373c44dce4c23c64baaa10f3ed22c789f4a1d99826b009086be2c9de2664cdb2bb33e1976e58c227fb1420e34f32035188a0787d801f8376648a90f5011f9f96_1280.jpg",
+            "src": "https://images.pexels.com/photos/2078772/pexels-photo-2078772.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "cotorroIllustration"
         },
         "bestseller": false,
@@ -50,7 +50,7 @@ export const products = [
         "price": 5.00,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g22159f72830c82b8846e5753cf31d3499eab44b661463f54cef4f3e69f1596b9e5f90ea4db97bff850461363b5af54b204bef5751ed1dff98b20fc828392ef8a_1280.jpg",
+            "src": "https://images.pexels.com/photos/9184517/pexels-photo-9184517.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "PurpleSky"
         },
         "bestseller": false,
@@ -65,7 +65,7 @@ export const products = [
         "price": 11.50,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g6ab077777a78de799f584c811647c3a900d7a8a89837d4c1375943e158a0632dfb2146855415d1417e619cb03e5fb4c46c24157b7fff20e54fdc75c4ed62cdcb_1280.jpg",
+            "src": "https://images.pexels.com/photos/1274260/pexels-photo-1274260.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "PinchofSpace"
         },
         "bestseller": false,
@@ -80,7 +80,7 @@ export const products = [
         "price": 19.90,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/ge6267f9122efc894478f71158213b38ca333fbaf47b26a8507f84739417092fcf9b2910fd80e59b5436a42c28cfbac075cb3bb197bb68b210409e28954339b24_1280.jpg",
+            "src": "https://images.pexels.com/photos/1176618/pexels-photo-1176618.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "SomthingBlue"
         },
         "bestseller": false,
@@ -95,7 +95,7 @@ export const products = [
         "price": 20.00,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/gb44b4d163e7218b4a308a0fc1f66eaa3152a4ab312f71efebbc95c7550ad81796c2f69330b930eab83bcb7c427b1ff75fa4408e80acd26f8fd24b5c0a7e90dd9_1280.jpg",
+            "src": "https://images.pexels.com/photos/1547813/pexels-photo-1547813.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "RedNature"
         },
         "bestseller": false,
@@ -125,7 +125,7 @@ export const products = [
         "price": 40.00,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g69f58fd014a414be0c091b7e8cc5c9766438d0ed9c22f8b3a681a75cc3efbc0fc35e57f5f387492293078a16049c3c4cbd8b1211f05f5af0e83bda0d2f626288_1280.jpg",
+            "src": "https://images.pexels.com/photos/2332836/pexels-photo-2332836.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "alt": "LittleHorse"
         },
         "bestseller": false,
@@ -170,7 +170,7 @@ export const products = [
         "price": 100,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/gadeb77fe309febdcc5161fc1127466be233e9868d709d640519e3e7589984574bcebdfb11212a8e9a402bcc863626074907e394d2cfda58b5aa5cda670d6d7c5_1280.jpg",
+            "src": "https://images.pexels.com/photos/9548764/pexels-photo-9548764.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "A new Day"
         },
         "bestseller": false,
@@ -200,7 +200,7 @@ export const products = [
         "price": 150,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/gff92cfbc02b15693ea287b8a453694b867bc35c303f3d1aebb4fa33c86a5191591f857eb628730802a2823f2c918ccff2100d0a1d0b9598b22cbed74bf4c1f80_1280.jpg",
+            "src": "https://images.pexels.com/photos/1843695/pexels-photo-1843695.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "alt": "Sweet Dreams"
         },
         "bestseller": false,
@@ -215,7 +215,7 @@ export const products = [
         "price": 150,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g19e75f2e76368619c8074bec30d062d7a37c08991b3c2600637964fad0590bc08dcc1b90dce7922406e1e1502c20b3f2f69f9af2b0dbcef966a3bdf916f761f8_1280.jpg",
+            "src": "https://images.pexels.com/photos/4004122/pexels-photo-4004122.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "A day Without Mask"
         },
         "bestseller": false,
@@ -230,7 +230,7 @@ export const products = [
         "price": 150,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g44aecf0974cfe5202da8ccb0956faff9bec55780175c1ad436e9a23297fbe22811ad62af268aba1a519fc058eede882a405e2933a9757d2baddaeb8b76487592_1280.jpg",
+            "src": "https://images.pexels.com/photos/3756616/pexels-photo-3756616.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "alt": "Beautiful Bones"
         },
         "bestseller": false,
@@ -245,7 +245,7 @@ export const products = [
         "price": 150.00,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g28bd8109cb7e507088f459d70b4ce632c40ae26f6b5f4445fe96ef9ee14957cb16ee038941631c34e95e9867b2211ee38746efda2290f8eabe3822d461d1d96e_1280.jpg",
+            "src": "https://images.pexels.com/photos/7257018/pexels-photo-7257018.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
             "alt": "Nice Tools"
         },
         "bestseller": false,
@@ -260,7 +260,7 @@ export const products = [
         "price": 150.00,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g6ed729519000e6706a8bb5fe3aef607b42248ff9b3d2887c9560210cf7e1e003e23ade3f219116fd7ca8cba34de43fb16e9d8b0b40ba9a24707548dea8c39558_1280.jpg",
+            "src": "https://images.pexels.com/photos/3347244/pexels-photo-3347244.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "Last Sun"
         },
         "bestseller": false,
@@ -275,7 +275,7 @@ export const products = [
         "price": 202.95,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/gb63c129c764cfaeb64847076ded872e7917d02048af058a16def10204119730035bbcc889afafee4df27aec2d0f98554b08eafc45693443ae7e605c3981ff6b9_1280.jpg",
+            "src": "https://images.pexels.com/photos/673588/pexels-photo-673588.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "Good Line"
         },
         "bestseller": false,
@@ -305,7 +305,7 @@ export const products = [
         "price": 202.95,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g73f355134f925349ad4d46861860e5f88947fdaa976035387d96b197355a1bd7eed124862178c964ed0406da397e5b5e486e3737c0b1ae00f76551fddec99153_1280.jpg",
+            "src": "https://images.pexels.com/photos/4588065/pexels-photo-4588065.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "Little Rabitt"
         },
         "bestseller": false,
@@ -320,7 +320,7 @@ export const products = [
         "price": 202.95,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g8cdef0b20634dcb4a6b4652435a2adf98fbfd447681727506be748d599bfab4b9b71aa07a90651c7c13221914034930ccfae05f11dbeaec3a6bb06a7026d6fa7_1280.jpg",
+            "src": "https://images.pexels.com/photos/3149896/pexels-photo-3149896.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "Holidays"
         },
         "bestseller": false,
@@ -335,7 +335,7 @@ export const products = [
         "price": 202.95,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g24fc55f89148e01e030eef2478c0d8b277738eb656c6d09c8b081a7df83c528ad80e945cd5d35925438855946e7b5e0e098495fb6c03e051f13b2b18092dadae_1280.jpg",
+            "src": "https://images.pexels.com/photos/9582359/pexels-photo-9582359.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "Lobo en Paris"
         },
         "bestseller": false,
@@ -350,7 +350,7 @@ export const products = [
         "price": 202.95,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g13ff86101583510f1519c34e4fecd439bd03c2813d26e728d0b82650b196f46a3a5372edc1964d44f7f39b27cdb96cc4b489db0acc50190f4f38879a255e84fe_1280.jpg",
+            "src": "https://images.pexels.com/photos/2839553/pexels-photo-2839553.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
             "alt": "ArtWomen"
         },
         "bestseller": false,

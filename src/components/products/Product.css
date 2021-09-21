@@ -72,3 +72,39 @@
        /* background-color: aqua; */
        height: 4rem;
    }
+
+
+
+   /* Pagination */
+
+   .pagenumbers button {
+	width: 25px;
+	height: 25px;
+
+	appearance: none;
+	border: none;
+	outline: none;
+	cursor: pointer;
+
+	background-color: transparent;
+
+	margin: 5px;
+	transition: 0.4s;
+
+	color: gray;
+	font-size: 1rem;
+	/* text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); */
+	/* box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2); */
+}
+
+.pagenumbers button:hover {
+	background-color: lightgray;
+    color: #000;
+}
+
+.pagenumbers button.active {
+	/* background-color: #44EEAA; */
+    color: #000;
+    font-weight: bold;
+	/* box-shadow: inset 0px 0px 4px rgba(0, 0, 0, 0.2); */
+}

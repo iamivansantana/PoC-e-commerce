@@ -3,24 +3,62 @@
 export const sortProducts = ( productList, sortValue, orderList) => {
 
 
+    // console.log(productList,'Recibido',sortValue,orderList);
+
+    switch (sortValue) {
+        case 'Price':
+            if (orderList) {
+                productList.sort(function (a, b){
+                    return (a.price - b.price)
+                })
+            }else{
+                productList.sort(function (a, b){
+                    return (b.price - a.price)
+                })
+            }
+        break;
+        case 'Alphabetically':
+            if (orderList) {
+                productList.sort((a,b)=>{
+                    return (a.name < b.name)?-1:1
+                })
+            }
+            else{
+                productList.sort((a,b)=>{
+                    return (a.name > b.name)?-1:1
+                })
+            }
+        break;
     
+        default:
+            break;
+    }
 
-    // let sortArray = [];
 
 
-    //   if( sortValue === 'Price' && orderList === true){
-    //      sortArray = productList.sort(function (a, b){
+    //   if( sortValue === 'Price' && orderList){
+    //       productList.sort(function (a, b){
     //         return (a.price - b.price)
-    //     });
-          
+    //     });   
     //   }
-    //   else if( sortValue === 'Price' && orderList === false ){
-    //      sortArray = productList.sort(function (a, b){
+    //   else if( sortValue === 'Price' && !orderList){
+    //       productList.sort(function (a, b){
     //         return (b.price - a.price)
     //     });
-
     //   }
-    //   else if( sortValue === 'Alphabetically' && orderList === true){
+    //    else if( sortValue === 'Alphabetically' && orderList){
+    //       productList.sort((a,b)=>{
+    //          return (a.name < b.name)?-1:1
+    //      });
+    //   }
+    //    else if( sortValue === 'Alphabetically' && !orderList){
+    //      productList.sort((a,b)=>{
+    //          return (a.name > b.name)?-1:1
+    //      });
+    //   }
+
+
+    //    else if( sortValue === 'Alphabetically' && orderList === true){
     //      sortArray = productList.sort(function (a, b) {
     //         if (a.name > b.name) {
     //           return 1;
@@ -53,7 +91,7 @@ export const sortProducts = ( productList, sortValue, orderList) => {
 
     
     // console.log(sortArray);
-    
+    //   console.log(sortArray,'respuesta');
 
 }
 

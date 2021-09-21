@@ -1,21 +1,23 @@
-import React from 'react';
+import React, { useContext} from 'react';
 import './Product.css';
 import ProductCard from './ProductCard';
-import {products} from '../../data/dataStore';
+import articlesContext from '../../context/articlesContext/articlesContext';
 
 
 const ProductList = () => {
+    
+    
 
-    // useEffect(() => {
-    //     console.log(ObjetData.products);
-    // }, []);
+    //access to the context to get the data to be displayed  
+    const {displayListArr,btnNext,btnPrevious} = useContext(articlesContext);
+    
     
     return (
         <>
             <div className="containerList" >
                <div className="containerListGrid" >
                     {
-                        products.map(product=>(
+                        displayListArr.map(product=>(
                             <div key={product.name} className="flex flex-aling-center flex-justify-center">
                                 <ProductCard 
                                     product={product}
@@ -27,7 +29,9 @@ const ProductList = () => {
 
                </div>
                <div className="flex flex-justify-center flex-aling-center paginationStyles">
-                    &lt; 1 2 3 4 &gt;
+                    <button onClick={btnPrevious} type="button" className="btn btn-hover textTittle textBold">&lt;</button>
+                    <div className="pagenumbers" id="pagination">  </div>
+                    <button onClick={btnNext} className="btn btn-hover textTittle textBold">&gt;</button>
                 </div>
              </div>  
         </>

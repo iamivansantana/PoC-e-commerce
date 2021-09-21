@@ -33,7 +33,7 @@ const FilteringFixed = () => {
                 <div className="FilteringContainerSettings">
                     <div className="flex flex-justify-between" style={{height:'2rem'}}>
                         <div className="textColorPrimary textBold textTittle">Filter</div>
-                        <button onClick={toggleFilteringFunc}  className="btn btn-hover"><img width="20px" src="\assets\e-commerce\icons\closeIcon.svg" alt="btnClose" /></button>
+                        <button onClick={toggleFilteringFunc}  className="btn btn-hover"><img width="20px" height="20px" src="\assets\e-commerce\icons\closeIcon.svg" alt="btnClose" /></button>
                     </div>
                     
                     <div className="filteringSettings">
