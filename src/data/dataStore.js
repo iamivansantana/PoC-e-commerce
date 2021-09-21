@@ -152,7 +152,7 @@ export const products = [
     {
         "name": "Sometime in NY",
         "category": "Sunset",
-        "price": 70.00,
+        "price": 99.90,
         "currency": "USD",
         "image": {
             "src": "https://images.pexels.com/photos/3559235/pexels-photo-3559235.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260",
@@ -167,7 +167,7 @@ export const products = [
     {
         "name": "A new Day",
         "category": "Wallpapers",
-        "price": 99.90,
+        "price": 100,
         "currency": "USD",
         "image": {
             "src": "https://pixabay.com/get/gadeb77fe309febdcc5161fc1127466be233e9868d709d640519e3e7589984574bcebdfb11212a8e9a402bcc863626074907e394d2cfda58b5aa5cda670d6d7c5_1280.jpg",
@@ -242,10 +242,10 @@ export const products = [
     {
         "name": "Nice Tools",
         "category": "Art",
-        "price": 150,
+        "price": 150.00,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/gee06e180befa3aa3f973b46a45f959b0df8666755a7e7a2139549c90139820b8e3cffaf17f9306e1013610fb2f5eebb1e261090c676423df701b84",
+            "src": "https://pixabay.com/get/g28bd8109cb7e507088f459d70b4ce632c40ae26f6b5f4445fe96ef9ee14957cb16ee038941631c34e95e9867b2211ee38746efda2290f8eabe3822d461d1d96e_1280.jpg",
             "alt": "Nice Tools"
         },
         "bestseller": false,
@@ -257,7 +257,7 @@ export const products = [
     {
         "name": "Last Sun",
         "category": "Sunset",
-        "price": 150,
+        "price": 150.00,
         "currency": "USD",
         "image": {
             "src": "https://pixabay.com/get/g6ed729519000e6706a8bb5fe3aef607b42248ff9b3d2887c9560210cf7e1e003e23ade3f219116fd7ca8cba34de43fb16e9d8b0b40ba9a24707548dea8c39558_1280.jpg",
@@ -335,7 +335,7 @@ export const products = [
         "price": 202.95,
         "currency": "USD",
         "image": {
-            "src": "https://pixabay.com/get/g24fc55f89148e01e030eef2478c0d8b277738eb656c6d09c8b081a7df83c528ad80e945cd5d35925438855946e7b5e0e098495fb6c03e051f13b2b18092dadae_1280.jp",
+            "src": "https://pixabay.com/get/g24fc55f89148e01e030eef2478c0d8b277738eb656c6d09c8b081a7df83c528ad80e945cd5d35925438855946e7b5e0e098495fb6c03e051f13b2b18092dadae_1280.jpg",
             "alt": "Lobo en Paris"
         },
         "bestseller": false,

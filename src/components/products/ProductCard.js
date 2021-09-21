@@ -1,7 +1,8 @@
 import React from 'react';
 import './Product.css';
 
-const ProductCard = () => {
+const ProductCard = ({product}) => {
+    
     return (
         <>
             <div className="containerProduct flex flex-column">
@@ -11,13 +12,16 @@ const ProductCard = () => {
                             <button onClick={()=>{alert('ok')}} className="btnAdd" type="button">ADD TO CART</button>
                         </div>
                     </div>
-                    <img className="imgCover" src={`https://cdn.pixabay.com/photo/2021/09/11/15/43/outdoor-6615900_960_720.jpg`} alt="alt"/>
-                    <div className="bestSeller">Best Seller</div>
+                    <img className="imgCover" src={`${product.image.src}`} alt="alt"/>
+                    {
+                        (product.bestseller)?<div className="bestSeller">Best Seller</div>
+                        :null
+                    }
                 </div>
                 <div className="productDescContainer flex flex-column flex-justify-around">
-                    <div className="textSubtittle textBold textColorSecondary" >Food</div>
-                    <div className="textTittle textBold textColorPrimary">Samurai King Resting </div>
-                    <div className="textTittle  textColorSecondary" >$93.89</div>
+                    <div className="textSubtittle textBold textColorSecondary" >{product.category}</div>
+                    <div className="textTittle textBold textColorPrimary">{product.name} </div>
+                    <div className="textTittle  textColorSecondary" >${product.price}</div>
                     
                 </div>
             </div>

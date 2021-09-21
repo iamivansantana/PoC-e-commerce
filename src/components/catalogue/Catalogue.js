@@ -9,7 +9,7 @@ const Catalogue = () => {
     
     //Access to Context
         //Destructuring States
-    const {screenSize,setScreenSize,toggleFilteringFunc} = useContext(articlesContext);
+    const {screenSize,setScreenSize,toggleFilteringFunc,handleSortChange,sortValue,changeOrderList} = useContext(articlesContext);
 
 
     //Effecto que escucha cuando cambia el tamaño de la pantalla;
@@ -40,6 +40,10 @@ const Catalogue = () => {
     },[setScreenSize]);
 
 
+    
+
+    
+
 
     return (
         <>
@@ -61,12 +65,15 @@ const Catalogue = () => {
                 </div>
 
                 <div className="flex flex-justify-right flex-aling-center">
-                    <button className="btn btn-hover" style={{marginRight:'5px'}}><img width="15px" height="14.5px" src="\assets\e-commerce\icons\arrowsIcon.svg" alt="changeOrder"/></button>
+                    <button onClick={changeOrderList}  className="btn btn-hover" style={{marginRight:'5px'}}><img width="15px" height="14.5px" src="\assets\e-commerce\icons\arrowsIcon.svg" alt="changeOrder"/></button>
                     <div className="textColorSecondary">Sort By </div>
                 
-                    <select >
+                    <select 
+                        defaultValue={sortValue}
+                        onChange={handleSortChange}
+                    >
                         <option value="Price" defaultValue>Price</option>
-                        <option value="alphabetically">Alphabetically</option>
+                        <option value="Alphabetically">Alphabetically</option>
                     </select>
                 </div>
 

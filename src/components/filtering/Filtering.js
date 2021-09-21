@@ -52,19 +52,19 @@ const Filtering = () => {
                         <span style={{marginLeft:'1rem',marginTop:'.2rem'}}>Any Price</span>
                     </label>
                     <label className="textSubtittle checkbox flex">
-                        <input type="radio" id="price1" name="price" value="Lower than $20" onClick={() => setPriceState('Lower than $20')}/>
+                        <input type="radio" id="price1" name="price" value="<20" onClick={() => setPriceState('<20')}/>
                         <span style={{marginLeft:'1rem',marginTop:'.2rem'}}>Lower than $20</span>
                     </label>
                     <label className="textSubtittle checkbox flex">
-                        <input type="radio" id="price2" name="price"  value="$20 - $100" onClick={() => setPriceState('$20 - $100')}/>
+                        <input type="radio" id="price2" name="price"  value=">= 20 and <=100" onClick={() => setPriceState('>= 20 && <=100')}/>
                         <span style={{marginLeft:'1rem',marginTop:'.2rem'}}>$20 - $100</span>
                     </label>
                     <label className="textSubtittle checkbox flex">
-                        <input type="radio" id="price3" name="price"  value="$100 - $200" onClick={() => setPriceState('$100 - $200')}/>
+                        <input type="radio" id="price3" name="price"  value=">=100 and <=200" onClick={() => setPriceState('>=100 && <=200')}/>
                         <span style={{marginLeft:'1rem',marginTop:'.2rem'}}>$100 - $200</span>
                     </label>
                     <label className="textSubtittle checkbox flex">
-                        <input type="radio" id="price4" name="price"  value="$More than $200" onClick={() => setPriceState('More than $200')}/>
+                        <input type="radio" id="price4" name="price"  value=">200" onClick={() => setPriceState('>200')}/>
                         <span style={{marginLeft:'1rem',marginTop:'.2rem'}}>More than $200</span>
                     </label>
                 </div>
