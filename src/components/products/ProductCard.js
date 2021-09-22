@@ -9,19 +9,18 @@ const ProductCard = ({product}) => {
 const {addProduct,setShopingState} = useContext(articlesContext);
     // const {addProduct} = useContext(articlesContext);
 
+    //current Product
     const newProduct={
         productName:product.name,
         productPrice:product.price,
         productImg:product.image.src,
     };
 
-
+    //Function to send the product when press the button add
   const sendProduct = ()=>{
       addProduct(newProduct);
       setShopingState(true);
   }
-  
-
     
     return (
         <>

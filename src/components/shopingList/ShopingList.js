@@ -4,14 +4,8 @@ import './ShopingList.css';
 
 const ShopingList = () => {
 
-    //Context of Articles
+    //Context of Articles to get the cart 
     const { toggleCart,cart,cleanList} = useContext(articlesContext);
-
-    // const { cart } = useContext(articlesContext);
-
-
-
-
 
     return (
         <>
@@ -22,27 +16,20 @@ const ShopingList = () => {
                     </div>
                     <div className="listShoping flex flex-column flex-aling-center">
 
-
-
-                    {(cart.length <=0)
-                        ? <h3 className="tittle" style={{textAlign:'center',opacity:'10%'}}>THERE ARE NOT PRODUCTS ON YOUR CART</h3>
-                        : cart.map((product,index)=>(
-                            <div key={ index }  className="flex shopingItemStyles flex-justify-between">
-                                <div className="shopingItemDescription flex flex-column flex-justify-center" >
-                                    <div className="shopingItemDescriptionTittle">{product.productName}</div>
-                                    <div className="shopingItemDescriptionPrice">${product.productPrice}</div>
+                        {(cart.length <=0)
+                            ? <h3 className="tittle" style={{textAlign:'center',opacity:'10%'}}>THERE ARE NOT PRODUCTS ON YOUR CART</h3>
+                            : cart.map((product,index)=>(
+                                <div key={ index }  className="flex shopingItemStyles flex-justify-between">
+                                    <div className="shopingItemDescription flex flex-column flex-justify-center" >
+                                        <div className="shopingItemDescriptionTittle">{product.productName}</div>
+                                        <div className="shopingItemDescriptionPrice">${product.productPrice}</div>
+                                    </div>
+                                    <div className="flex shopingItemImage">
+                                        <img loading="lazy" src={product.productImg} alt="imgProduct" />
+                                    </div>
                                 </div>
-                                <div className="flex shopingItemImage">
-                                    <img loading="lazy" src={product.productImg} alt="imgProduct" />
-                                </div>
-                            </div>
-                        ))
-
-                    }
-            
-
-                        
-                        
+                            ))
+                        }
                     </div>
                     <button onClick={()=>{cleanList()}} className="btn btnClearStyles" type="button">CLEAR</button>
                 </div>

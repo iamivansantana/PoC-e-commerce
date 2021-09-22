@@ -12,15 +12,11 @@ const Filtering = () => {
 
     //Function to update the state 
     const actualizarState = (e)=>{
-
         if(e.target.checked){
             const newChecksArry = [...checkValues,e.target.value];
             setCheckValues(newChecksArry);
         }
         else setCheckValues(checkValues.filter(product=>product !== e.target.value));
-
-
-
      }
 
     return (

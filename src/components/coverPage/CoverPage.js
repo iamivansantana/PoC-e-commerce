@@ -2,11 +2,14 @@ import React from 'react';
 import './CoverPage.css';
 
 const CoverPage = () => {
+
+    
+
     return (
         <>
             <div className="containerCoverPage">
                 <div className="displayGrid">
-                    <div className="coverTittle">Samurai King Resting<span className="coverPrice">$100.00</span></div>
+                    <div className="coverTittle">In a little corner of the world<span className="coverPrice">$100.00</span></div>
                     <div className="coverBtnAdd">
                         <button className="btn btnAddStyles"  type="button">ADD TO CART</button> 
                     </div>
@@ -16,9 +19,9 @@ const CoverPage = () => {
                         <img src={`https://images.pexels.com/photos/10922/pexels-photo-10922.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260`} alt="PhotoOfTheDay"/>
                     </div>
                     <div className="coverDesc">
-                        <div className="coverDescTittle">About the Samurai King Resting</div>
-                        <div className="coverDescCategory">Pets</div>
-                        <div className="coverDescDescription">So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock, a 15th century typesetter likely scrambled part of Cicero's De Finibus in order to provide placeholder text to mockup various fonts for a type specimen book.So how did the classical Latin become so incoherent? According to McClintock. </div>
+                        <div className="coverDescTittle">About the In a little corner of the world</div>
+                        <div className="coverDescCategory">Wallpapers</div>
+                        <div className="coverDescDescription">The Colosseum or Flavian Amphitheater is an amphitheater from the time of the Roman Empire, built in the 1st century. Originally known as the Flavian Amphitheater, it is now called the Colosseum (Colosseum) because next to it there was a large statue, the Colossus of Nero. </div>
                     </div>
                     <div className="coverAlsoBuy">
                         <div className="coverAlsoBuyContainter">

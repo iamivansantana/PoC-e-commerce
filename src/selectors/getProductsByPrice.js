@@ -4,8 +4,6 @@ export const getProductsByPrice = ( productList, price = '' ) => {
 
     if(price === '')return[];
 
-    // console.log(productList, price);
-
     switch (price) {
         case 'Any Price':
           return productList;

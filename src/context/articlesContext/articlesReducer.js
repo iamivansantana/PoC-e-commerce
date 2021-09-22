@@ -9,27 +9,6 @@ import { types } from '../../types/types';
                 action.payload
             ];
 
-        // case types.updateQtyProduct:
-        //     return state.map(product=>
-        //         (product.productId === action.payload.id)
-        //         ?{...product, productQuantity: product.productQuantity + action.payload.qty}
-        //         :product
-        //         );
-                
-        // case types.addProduct:
-        //     return state.map(product=>
-        //         (product.productId === action.payload.id)
-        //         ?{...product, productQuantity: product.productQuantity + 1}
-        //         :product
-        //         );
-        
-        // case types.subtractProduct:
-        //     return state.map(product=>
-        //         (product.productId === action.payload.id)
-        //         ?{...product, productQuantity: product.productQuantity - 1}
-        //         :product
-        //         );
-
         case types.cleanShoppingCart:
             return [];
 

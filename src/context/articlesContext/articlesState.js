@@ -158,7 +158,6 @@ const ArticlesState = ( props ) => {
     }
     //toggleOfShoppingCart
     const toggleFilteringFunc = () => {
-
         if(filteringToggle)setFilteringToggle(false);
         else setFilteringToggle(true);
     }
@@ -183,12 +182,14 @@ const ArticlesState = ( props ) => {
     }
 
 //Functions to chage Reducer
+    //Add a proct to the cart
     const addProduct =  (newArticle)=>{
         dispatch({
             type: types.addShoppingCart,
             payload: newArticle
         });
     }
+    //clean all the list
     const cleanList = ()=>{
         dispatch({
             type: types.cleanShoppingCart
@@ -200,6 +201,7 @@ const ArticlesState = ( props ) => {
     return (
         <articlesContext.Provider
          value={{
+            productListToShow,
             toggleFilteringFunc,
             arrayOfCategories,
             checkValues,

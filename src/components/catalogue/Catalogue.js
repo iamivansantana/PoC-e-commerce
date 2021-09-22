@@ -8,41 +8,35 @@ const Catalogue = () => {
 
     
     //Access to Context
-        //Destructuring States
+        //Destructuring from context
     const {screenSize,setScreenSize,toggleFilteringFunc,handleSortChange,sortValue,changeOrderList} = useContext(articlesContext);
 
 
-    //Effecto que escucha cuando cambia el tamaño de la pantalla;
+    //Effect that hears when the screen size changes;
     useEffect(() => {
 
+        //Condition to do the changes
         function isSmallScreen() {
             return window.matchMedia('(max-width: 876px)').matches;
         }
         setScreenSize(isSmallScreen());
         
 
-        // Funcion que se ejecuta cada que el tamaño de la pantalla cambia
+        // Funtion that runs when the screen it's changing
         const screenResize = () => {
-
-            //Verifica cada vez que cambia el tamaño si se cumple el max-width para visualizar el componente de una manera responsive.
+            // Check every time the size changes if the max-width is met to display the component in a responsive way.
             function isSmallScreen() {
                 return window.matchMedia('(max-width: 876px)').matches;
             }
-            //Si la pantalla es menor a 500px (celular Vertical) 
+            // If the screen is less than 500px (Vertical cell)
             if(isSmallScreen()) setScreenSize(true);
             else setScreenSize(false);
-            
         }
 
-        //Evento que escucha cuando cambia el tamaño de la pantalla
+        // Event that listens when screen size changes
         window.addEventListener("resize",()=>{screenResize()});
 
     },[setScreenSize]);
-
-
-    
-
-    
 
 
     return (
@@ -77,53 +71,18 @@ const Catalogue = () => {
                     </select>
                 </div>
 
-                
                 <div className="flex" style={{marginTop:'1rem'}}>
-
-                            {
-                                (!screenSize)?
-                                    <div className="catalogueFiltering">
-                                            <Filtering />
-                                    </div>  
-                                :null
-                            }
-
-                            
-
-
-                    <div className="catalogueGalery flex  flex-justify-center">
-                            
-                            <ProductList />
-
-                            {/* <ProductCard /> */}
-                            {/* <p>-------</p>
-                            <ProductCard />
-                            <p>-------</p>
-                            <ProductCard /> */}
+                    {
+                        (!screenSize)?
+                            <div className="catalogueFiltering">
+                                    <Filtering />
+                            </div>  
+                        :null
+                    }
+                    <div className="catalogueGalery flex  flex-justify-center">    
+                        <ProductList />
                     </div>  
-
-
                 </div>
-                    {/* <div>
-                        {(0===1)?null
-                        :
-                        <button
-                            type="button"
-                            className="bbtn btn-info mr-2 mb-5"
-                            // onClick={}
-                            >&laquo; Anterior            
-                        </button>
-                        }
-                        {(5 === 6)?null
-                        :
-                        <button
-                            type="button"
-                            className="bbtn btn-info mb-5"
-                            // onClick={}
-                        >Siguiente &raquo;           
-                        </button>
-                        }
-                    </div> */}
             </div>
         </>
     )

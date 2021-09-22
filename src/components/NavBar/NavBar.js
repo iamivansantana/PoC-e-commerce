@@ -5,12 +5,12 @@ import './NavBar.css'
 
 const NavBar = () => {
 
+    //Access to the context
     const {shopingState,toggleCart,cart} = useContext(articlesContext);
 
+    //Total of products on the cart
     let total = cart.length;
-    // const total = cart.length();
     
-
     return (
         <>
             <div className="flex flex-justify-between flex-aling-center navbarStyle">
@@ -23,12 +23,10 @@ const NavBar = () => {
                         <span className='mark-cart'>{total}</span>
                     </button>
                 </div>
-                
+                {/* mount and dismount the component */}
+                    {/* This need to change to better performance */}
                 {(shopingState)?<ShopingList />:null}
 
-                
-                
-                
             </div>  
         </>
     )
