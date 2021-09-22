@@ -5,7 +5,11 @@ import './NavBar.css'
 
 const NavBar = () => {
 
-    const {shopingState,toggleCart} = useContext(articlesContext);
+    const {shopingState,toggleCart,cart} = useContext(articlesContext);
+
+    let total = cart.length;
+    // const total = cart.length();
+    
 
     return (
         <>
@@ -16,7 +20,7 @@ const NavBar = () => {
                 <div className="icon">
                     <button onClick={toggleCart} type="button" className="btn">
                         <img className="shopingCartIconStyles" src="\assets\e-commerce\icons\shopping-cart.svg" alt="shopping-cartIcon" />
-                        <span className='mark-cart'>5</span>
+                        <span className='mark-cart'>{total}</span>
                     </button>
                 </div>
                 

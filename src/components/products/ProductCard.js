@@ -1,7 +1,27 @@
 import React from 'react';
+import { useContext } from 'react/cjs/react.development';
+import articlesContext from '../../context/articlesContext/articlesContext';
 import './Product.css';
 
 const ProductCard = ({product}) => {
+
+//access to the context to get the data to be displayed  
+const {addProduct,setShopingState} = useContext(articlesContext);
+    // const {addProduct} = useContext(articlesContext);
+
+    const newProduct={
+        productName:product.name,
+        productPrice:product.price,
+        productImg:product.image.src,
+    };
+
+
+  const sendProduct = ()=>{
+      addProduct(newProduct);
+      setShopingState(true);
+  }
+  
+
     
     return (
         <>
@@ -9,7 +29,7 @@ const ProductCard = ({product}) => {
                 <div className="productImgContainer">
                     <div className="productHover">
                         <div className="flex flex-aling-right">
-                            <button onClick={()=>{alert('ok')}} className="btnAdd" type="button">ADD TO CART</button>
+                            <button onClick={sendProduct} className="btnAdd" type="button">ADD TO CART</button>
                         </div>
                     </div>
                     <img loading="lazy" className="imgCover" src={`${product.image.src}`} alt="alt"/>

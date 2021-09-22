@@ -1,11 +1,28 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useReducer, useState } from 'react';
 import articlesContext from './articlesContext';
 import {products} from '../../data/dataStore';
 import { getProductsByPrice } from '../../selectors/getProductsByPrice';
 import { getProductsByCategory } from '../../selectors/getProductsByCategory';
 import { sortProducts } from '../../selectors/sortProducts';
+import articlesReducer from './articlesReducer';
+import { types } from '../../types/types';
+
+
+        //init es utilizado por el useReducer como estado inicial.
+        const init = ()=>{
+            //regresa el contenido almacenado del user en el localStorage y en caso de no existir retorna la "{ logged: false }"
+            return JSON.parse(localStorage.getItem('Cart')) || [];
+        }
+
 
 const ArticlesState = ( props ) => {
+
+    const [cart, dispatch] = useReducer(articlesReducer, [], init)
+
+    //efecto que cambia el contenido del user en localStorage cada vez que el user cambia
+    useEffect(() => {
+        localStorage.setItem('Cart',JSON.stringify(cart));
+    }, [cart]);
 
    
 
@@ -127,6 +144,9 @@ const ArticlesState = ( props ) => {
 
     // ----------------------------------------------
 
+  //variables & Constantes
+  const itemPerPage = 6;
+  let totalPages = Math.ceil(productListToShow.length / itemPerPage);
 
    
 
@@ -162,6 +182,20 @@ const ArticlesState = ( props ) => {
         setCurrentPage(currentPage - 1);
     }
 
+//Functions to chage Reducer
+    const addProduct =  (newArticle)=>{
+        dispatch({
+            type: types.addShoppingCart,
+            payload: newArticle
+        });
+    }
+    const cleanList = ()=>{
+        dispatch({
+            type: types.cleanShoppingCart
+        });
+    }
+
+  
 
     return (
         <articlesContext.Provider
@@ -183,7 +217,12 @@ const ArticlesState = ( props ) => {
             changeOrderList,
             displayListArr,
             btnNext,
-            btnPrevious
+            btnPrevious,
+            currentPage,
+            totalPages,
+            addProduct,
+            cleanList,
+            cart
          }}
         >
             {props.children}

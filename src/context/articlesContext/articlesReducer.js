@@ -4,10 +4,10 @@ import { types } from '../../types/types';
  const articlesReducer = ( state = [], action) => {
     switch (action.type) {
         
-        // case types.addShoppingCArt:
-        //     return [...state,
-        //         action.payload
-        //     ];
+        case types.addShoppingCart:
+            return [...state,
+                action.payload
+            ];
 
         // case types.updateQtyProduct:
         //     return state.map(product=>
@@ -30,8 +30,8 @@ import { types } from '../../types/types';
         //         :product
         //         );
 
-        // case types.deleteProduct:
-        //     return state.filter(product=>product.productId !== action.payload.id);
+        case types.cleanShoppingCart:
+            return [];
 
 
         default:

@@ -9,8 +9,9 @@ const ProductList = () => {
     
 
     //access to the context to get the data to be displayed  
-    const {displayListArr,btnNext,btnPrevious} = useContext(articlesContext);
+    const {displayListArr,btnNext,btnPrevious,currentPage,totalPages} = useContext(articlesContext);
     
+    // console.log(currentPage)
     
     return (
         <>
@@ -29,9 +30,11 @@ const ProductList = () => {
 
                </div>
                <div className="flex flex-justify-center flex-aling-center paginationStyles">
-                    <button onClick={btnPrevious} type="button" className="btn btn-hover textTittle textBold">&lt;</button>
+                   {(currentPage !== 1)?<button onClick={btnPrevious} type="button" className="btn btn-hover textTittle textBold">&lt;</button>:null}
+                    
                     <div className="pagenumbers" id="pagination">  </div>
-                    <button onClick={btnNext} className="btn btn-hover textTittle textBold">&gt;</button>
+                    {(currentPage !== totalPages)?<button onClick={btnNext} className="btn btn-hover textTittle textBold">&gt;</button>:null}
+                    
                 </div>
              </div>  
         </>
