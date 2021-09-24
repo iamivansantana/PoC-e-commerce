@@ -1,32 +1,24 @@
-.catalogueContainer{
-    position: relative;
-    width: 100%;
-    height: auto;
-    min-height: 80vh;
-    margin-top: 2rem;
+.catalogueContainer {
+	position: relative;
+	width: 100%;
+	height: auto;
+	min-height: 80vh;
+	margin-top: 2rem;
 }
-.catalogueTittle{
-    /* background-color: skyblue; */
-    max-width: 60%;
+.catalogueTittle {
+	/* background-color: skyblue; */
+	max-width: 60%;
 }
-
-
-
-
-
-
-
-.catalogueFiltering{
-    /* background-color: violet; */
-    min-width: 200px;
-    width: 25%;
-    height: auto;
-    min-height: 50vh;
+.catalogueFiltering {
+	/* background-color: violet; */
+	min-width: 200px;
+	width: 25%;
+	height: auto;
+	min-height: 50vh;
 }
-.catalogueGalery{
-    /* background-color: springgreen; */
-    width: 100%;
-    height: auto;
-    min-height: 50vh;
+.catalogueGalery {
+	/* background-color: springgreen; */
+	width: 100%;
+	height: auto;
+	min-height: 50vh;
 }
-
