@@ -1,6 +1,5 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { useEffect } from 'react';
-import { useContext } from 'react/cjs/react.development';
 import articlesContext from '../../context/articlesContext/articlesContext';
 import Filtering from './Filtering';
 
